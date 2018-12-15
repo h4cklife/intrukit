@@ -33,7 +33,7 @@ $ vim intrukit.py
 
 Update your relative path or version if required from: #!/usr/bin/python3.6 :to whatever you need.
 
-````
+```
 $ chmod +x intrukit.py
 $ sudo ./intrukit.py
 ```
