@@ -16,7 +16,7 @@ to develop, as a module.
 Not all libraries in the requirements.txt may be used but may be implemented in modules in the near future.
 
 ```
-$ git clone https://github.com/dbe-5/intrukit.git
+$ git clone https://github.com/h4cklife/intrukit.git
 $ cd intrukit
 $ pip3 -r install requirements.txt
 ```
