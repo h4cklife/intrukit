@@ -1,0 +1,11 @@
+www
+mail
+test
+admin
+administrator
+internal
+public
+private
+internal
+int
+intern
