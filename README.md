@@ -18,7 +18,7 @@ Not all libraries in the requirements.txt may be used but may be implemented in 
 ```
 $ git clone https://github.com/h4cklife/intrukit.git
 $ cd intrukit
-$ pip3 -r install requirements.txt
+$ pip3 install -r requirements.txt
 ```
 
 # Usage
