@@ -47,8 +47,6 @@ Alternatively you can just run:
 $ sudo python3.6 intrukit.py
 ```
 
-        or whatever your most recent Python v3 is.
-
 
     ikit> help
     ikit> help <topic>
