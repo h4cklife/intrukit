@@ -13,12 +13,12 @@ class Module:
     Module Class
     """
 
-    __title__ = 'example.s3backup'
+    __title__ = 'utilities.s3backup'
     __date__ = '2019-03-15'
     __rank__ = 'normal'
     __description__ = 'This module will allow backups to an Amazon S3 bucket.'
 
-    __author__ = 'Example'
+    __author__ = 'Intrukit'
 
     def __init__(self, PROFILE=None, BUCKET=None, DIRECTORIES=None):
         """
