@@ -12,7 +12,7 @@ class Module:
     Module Class
     """
 
-    __title__ = 'auxiliary.revhost_lookup'
+    __title__ = 'auxiliary/revhost_lookup'
     __date__ = '2018-01-25'
     __rank__ = 'normal'
     __description__ = 'Perform a reverse hostname lookup against a target network'

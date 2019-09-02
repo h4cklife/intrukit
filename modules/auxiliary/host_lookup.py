@@ -12,7 +12,7 @@ class Module:
     Module Class
     """
 
-    __title__ = 'auxiliary.host_lookup'
+    __title__ = 'auxiliary/host_lookup'
     __date__ = '2018-01-25'
     __rank__ = 'normal'
     __description__ = 'This module will lookup hostnames/subdomains against a given domain'

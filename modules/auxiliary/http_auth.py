@@ -21,7 +21,7 @@ class Module:
     Module Class
     """
 
-    __title__ = 'auxiliary.http_auth'
+    __title__ = 'auxiliary/http_auth'
     __date__ = '2017-11-18'
     __rank__ = 'normal'
     __description__ = 'This is a HTTP authentication bruteforce module. Supports: basic, digest'

@@ -11,7 +11,7 @@ class Module:
     Module Class
     """
 
-    __title__ = 'payload.rsh'
+    __title__ = 'payload/rsh'
     __date__ = '2017-12-05'
     __rank__ = 'normal'
     __description__ = 'Print out various versions of one-line reverse shells'

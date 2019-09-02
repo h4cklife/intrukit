@@ -16,7 +16,7 @@ livemaps = {
 }
 
 class Module:
-    __title__ = 'intel.threats'
+    __title__ = 'intel/threats'
     __date__ = '2017-11-12'
     __rank__ = 'normal'
     __description__ = 'Live threat maps and threat intelligence resources'

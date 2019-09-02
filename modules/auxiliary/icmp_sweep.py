@@ -15,7 +15,7 @@ class Module:
     Module Class
     """
 
-    __title__ = 'auxiliary.icmp_sweep'
+    __title__ = 'auxiliary/icmp_sweep'
     __date__ = '2017-11-12'
     __rank__ = 'normal'
     __description__ = 'Perform an ICMP sweep against a network'

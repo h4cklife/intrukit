@@ -145,7 +145,7 @@ class Module:
     Module Class
     """
 
-    __title__ = 'intel.virus_total'
+    __title__ = 'intel/virus_total'
     __date__ = '2018-05-31'
     __rank__ = 'normal'
     __description__ = 'This module will allow you to query the Virus Total API'

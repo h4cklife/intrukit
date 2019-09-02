@@ -22,7 +22,7 @@ class Module:
     Module Class
     """
 
-    __title__ = 'auxiliary.form_auth'
+    __title__ = 'auxiliary/form_auth'
     __date__ = '2017-11-18'
     __rank__ = 'normal'
     __description__ = 'This is a website login form authentication bruteforce module.'

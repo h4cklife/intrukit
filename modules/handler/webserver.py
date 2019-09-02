@@ -15,7 +15,7 @@ class Module:
     Module Class
     """
 
-    __title__ = 'handler.webserver'
+    __title__ = 'handler/webserver'
     __date__ = '2017-11-16'
     __rank__ = 'normal'
     __description__ = 'This is a basic HTTP server for serving files or payloads'

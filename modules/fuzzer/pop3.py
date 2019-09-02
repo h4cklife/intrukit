@@ -15,7 +15,7 @@ class Module:
     Module Class
     """
 
-    __title__ = 'fuzzer.pop3'
+    __title__ = 'fuzzer/pop3'
     __date__ = '2018-02-02'
     __rank__ = 'normal'
     __description__ = 'Fuzz a POP3 or similar service.'

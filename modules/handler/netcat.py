@@ -11,7 +11,7 @@ class Module:
     Module Class
     """
 
-    __title__ = 'handler.netcat'
+    __title__ = 'handler/netcat'
     __date__ = '2017-12-01'
     __rank__ = 'normal'
     __description__ = 'This module will allow you to execute netcat with various options'

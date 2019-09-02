@@ -14,7 +14,7 @@ class Module:
     Module Class
     """
 
-    __title__ = 'auxiliary.ping_sweep'
+    __title__ = 'auxiliary/ping_sweep'
     __date__ = '2017-11-12'
     __rank__ = 'normal'
     __description__ = 'Perform a ping sweep against a network'

@@ -12,7 +12,7 @@ class Module:
     Module Class
     """
 
-    __title__ = 'auxiliary.snmp_enum'
+    __title__ = 'auxiliary/snmp_enum'
     __date__ = '2018-01-24'
     __rank__ = 'normal'
     __description__ = 'Perform SNMP enumeration against community strings'
