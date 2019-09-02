@@ -13,7 +13,7 @@ class Module:
     Module Class
     """
 
-    __title__ = 'auxiliary.smtp_userenum'
+    __title__ = 'auxiliary/smtp_userenum'
     __date__ = '2018-01-25'
     __rank__ = 'normal'
     __description__ = 'Enumerate a list of users against an SMTP host'

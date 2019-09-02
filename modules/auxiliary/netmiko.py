@@ -10,7 +10,7 @@ class Module:
     Module Class
     """
 
-    __title__ = 'auxiliary.auto_conf'
+    __title__ = 'auxiliary/auto_conf'
     __date__ = '2018-12-17'
     __rank__ = 'normal'
     __description__ = 'Perform remote Linux commands and automatically configure devices over SSH'

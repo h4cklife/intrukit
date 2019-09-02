@@ -16,7 +16,7 @@ class Module:
     Module Class
     """
 
-    __title__ = 'extractor.dde'
+    __title__ = 'extractor/dde'
     __date__ = '2017-11-24'
     __rank__ = 'normal'
     __description__ = 'This module will extract DDE payloads from DOC and DOCX files.'

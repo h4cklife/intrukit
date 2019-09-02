@@ -62,7 +62,7 @@ class Module:
     """
     Module Class
     """
-    __title__ = 'intel.traffic'
+    __title__ = 'intel/traffic'
     __date__ = '2017-11-12'
     __rank__ = 'normal'
     __description__ = 'List known traffic camera resources'

@@ -12,7 +12,7 @@ class Module:
     Module Class
     """
 
-    __title__ = 'extractor.subdomains'
+    __title__ = 'extractor/subdomains'
     __date__ = '2018-01-25'
     __rank__ = 'normal'
     __description__ = 'This module will extract subdomains and relative IPs from a given website\'s URL'

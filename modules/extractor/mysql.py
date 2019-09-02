@@ -15,7 +15,7 @@ class Module:
     Module Class
     """
 
-    __title__ = 'extractor.mysql'
+    __title__ = 'extractor/mysql'
     __date__ = '2017-11-25'
     __rank__ = 'normal'
     __description__ = 'The module will attempt to identify mysql injection vulnerabilities and extract data.'

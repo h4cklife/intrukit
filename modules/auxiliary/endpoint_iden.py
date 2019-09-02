@@ -22,7 +22,7 @@ class Module:
     Module Class
     """
 
-    __title__ = 'auxiliary.endpoint_iden'
+    __title__ = 'auxiliary/endpoint_iden'
     __date__ = '2017-11-16'
     __rank__ = 'normal'
     __description__ = 'Website dir/page endpoint bruteforce tool capable of taking screenshots of identified targets'

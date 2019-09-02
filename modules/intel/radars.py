@@ -9,7 +9,7 @@ radars = {
 }
 
 class Module:
-    __title__ = 'intel.radars'
+    __title__ = 'intel/radars'
     __date__ = '2017-11-12'
     __rank__ = 'normal'
     __description__ = 'List known useful radar systems'

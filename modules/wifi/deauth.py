@@ -14,7 +14,7 @@ class Module:
     Module Class
     """
 
-    __title__ = 'wifi.deauth'
+    __title__ = 'wifi/deauth'
     __date__ = '2018-01-24'
     __rank__ = 'normal'
     __description__ = 'Wifi client station de-authentication and jamming'

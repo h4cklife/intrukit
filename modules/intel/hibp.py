@@ -18,7 +18,7 @@ class Module:
 
     """
 
-    __title__ = 'intel.hibp'
+    __title__ = 'intel/hibp'
     __date__ = '2018-05-29'
     __rank__ = 'normal'
     __description__ = 'Check an email address against the Have I Been Pwned API'

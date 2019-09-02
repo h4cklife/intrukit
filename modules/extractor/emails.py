@@ -7,7 +7,7 @@ from multiprocessing import Process, Queue
 
 class Module:
 
-    __title__ = 'extractor.emails'
+    __title__ = 'extractor/emails'
     __date__ = '2017-11-13'
     __rank__ = 'normal'
     __description__ = 'This is a scrapy spider that will extract email addresses from the source code of web pages'

@@ -9,7 +9,7 @@ class Module:
     """
     Module Class
     """
-    __title__ = 'extractor.comments'
+    __title__ = 'extractor/comments'
     __date__ = '2017-11-13'
     __rank__ = 'normal'
     __description__ = 'This is a scrapy spider that will extract comments from the source code of web pages'
