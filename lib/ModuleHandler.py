@@ -20,16 +20,16 @@ class ModuleHandler():
         """
         self.Instance = Instance
 
-    def use(self, Module="example.hello_world"):
+    def use(self, Module="example/hello_world"):
         """
-        use(self, Module="example.hello_world")
+        use(self, Module="example/hello_world")
         
         :param Module: 
         :return: 
         
         Use a specific module as an Instance. The example.hello_world is used as default
         """
-        M = importlib.import_module("modules.{}".format(Module))
+        M = importlib.import_module("modules.{}".format(Module.replace("/", ".")))
         Mod = getattr(M, 'Module')
         Instance = Mod()
         self.Instance = Instance
