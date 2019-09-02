@@ -17,6 +17,7 @@ class Module:
     __date__ = '2018-01-25'
     __rank__ = 'normal'
     __description__ = 'Enumerate a list of users against an SMTP host'
+    __details__ = 'Provided a list of users, enumerate a SMTP host.'
 
     __author__ = 'Intrukit'
 

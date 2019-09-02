@@ -149,8 +149,9 @@ class Module:
     __date__ = '2018-05-31'
     __rank__ = 'normal'
     __description__ = 'This module will allow you to query the Virus Total API'
+    __details__ = 'None'
 
-    __author__ = 'Example'
+    __author__ = 'Intrukit'
 
     def __init__(self, FILEORHASH=None, REPORT=False, JSON=False, DOWNLOAD=False, PCAP=False, VERBOSE=False,
                  RESCAN=False, APIKEY=None):

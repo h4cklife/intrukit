@@ -19,6 +19,7 @@ class Module:
     __date__ = '2018-02-02'
     __rank__ = 'normal'
     __description__ = 'Fuzz a POP3 or similar service.'
+    __details__ = 'None'
 
     __author__ = 'Intrukit'
 

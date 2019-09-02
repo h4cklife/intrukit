@@ -19,6 +19,7 @@ class Module:
     __date__ = '2017-11-25'
     __rank__ = 'normal'
     __description__ = 'The module will attempt to identify mysql injection vulnerabilities and extract data.'
+    __details__ = 'None'
 
     __author__ = 'Intrukit'
 

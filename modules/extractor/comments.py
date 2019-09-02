@@ -13,6 +13,7 @@ class Module:
     __date__ = '2017-11-13'
     __rank__ = 'normal'
     __description__ = 'This is a scrapy spider that will extract comments from the source code of web pages'
+    __details__ = 'None'
 
     __author__ = 'Intrukit'
 

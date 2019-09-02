@@ -18,6 +18,7 @@ class Module:
     __date__ = '2018-01-24'
     __rank__ = 'normal'
     __description__ = 'Wifi client station de-authentication and jamming'
+    __details__ = 'None'
 
     __author__ = 'Intrukit'
 

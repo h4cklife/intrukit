@@ -16,6 +16,7 @@ class Module:
     __date__ = '2018-01-25'
     __rank__ = 'normal'
     __description__ = 'This module will lookup hostnames/subdomains against a given domain'
+    __details__ = 'None'
 
     __author__ = 'Intrukit'
 

@@ -15,6 +15,7 @@ class Module:
     __date__ = '2017-12-01'
     __rank__ = 'normal'
     __description__ = 'This module will allow you to execute netcat with various options'
+    __details__ = 'None'
 
     __author__ = 'Intrukit'
 

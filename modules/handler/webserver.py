@@ -19,6 +19,7 @@ class Module:
     __date__ = '2017-11-16'
     __rank__ = 'normal'
     __description__ = 'This is a basic HTTP server for serving files or payloads'
+    __details__ = 'None'
 
     __author__ = 'Intrukit'
 

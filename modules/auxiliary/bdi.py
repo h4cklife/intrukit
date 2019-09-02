@@ -33,6 +33,7 @@ class Module:
     __date__ = '2017-11-12'
     __rank__ = 'normal'
     __description__ = 'This module will scan a domain\'s site for known backdoor filenames'
+    __details__ = 'None'
 
     __author__ = 'Intrukit'
 

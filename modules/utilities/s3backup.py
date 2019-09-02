@@ -17,6 +17,7 @@ class Module:
     __date__ = '2019-03-15'
     __rank__ = 'normal'
     __description__ = 'This module will allow backups to an Amazon S3 bucket.'
+    __details__ = 'None'
 
     __author__ = 'Intrukit'
 
