@@ -11,10 +11,11 @@ class Module:
     Module Class
     """
 
-    __title__ = 'example.hello_world'
+    __title__ = 'example/hello_world'
     __date__ = '2017-11-12'
     __rank__ = 'normal'
     __description__ = 'This is a basic example module to show how you can create your own addons'
+    __details__ = 'You can add specific use case information, instructions, links etc here.'
 
     __author__ = 'Example'
 

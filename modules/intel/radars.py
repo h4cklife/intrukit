@@ -13,6 +13,7 @@ class Module:
     __date__ = '2017-11-12'
     __rank__ = 'normal'
     __description__ = 'List known useful radar systems'
+    __details__ = 'None'
 
     __author__ = 'Intrukit'
 

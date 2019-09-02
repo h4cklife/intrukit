@@ -66,6 +66,7 @@ class Module:
     __date__ = '2017-11-12'
     __rank__ = 'normal'
     __description__ = 'List known traffic camera resources'
+    __details__ = 'None'
 
     __author__ = 'Intrukit'
 

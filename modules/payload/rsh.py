@@ -15,6 +15,7 @@ class Module:
     __date__ = '2017-12-05'
     __rank__ = 'normal'
     __description__ = 'Print out various versions of one-line reverse shells'
+    __details__ = 'None'
 
     __author__ = 'Intrukit'
 

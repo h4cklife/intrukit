@@ -16,8 +16,9 @@ class Module:
     __date__ = '2018-01-25'
     __rank__ = 'normal'
     __description__ = 'Perform a reverse hostname lookup against a target network'
+    __details__ = 'None'
 
-    __author__ = 'Example'
+    __author__ = 'Intrukit'
 
     def __init__(self, NETWORK='192.168.1'):
         """

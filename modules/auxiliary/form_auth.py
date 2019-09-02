@@ -26,6 +26,7 @@ class Module:
     __date__ = '2017-11-18'
     __rank__ = 'normal'
     __description__ = 'This is a website login form authentication bruteforce module.'
+    __details__ = 'None'
 
     __author__ = 'Intrukit'
 

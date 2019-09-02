@@ -14,8 +14,9 @@ class Module:
     __date__ = '2018-12-17'
     __rank__ = 'normal'
     __description__ = 'Perform remote Linux commands and automatically configure devices over SSH'
+    __details__ = 'None'
 
-    __author__ = 'Example'
+    __author__ = 'Intrukit'
 
     def __init__(self, IP=None, DEVICE_TYPE='linux',
                  USERNAME=None, PASSWORD=None,

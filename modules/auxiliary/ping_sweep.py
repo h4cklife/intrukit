@@ -18,8 +18,9 @@ class Module:
     __date__ = '2017-11-12'
     __rank__ = 'normal'
     __description__ = 'Perform a ping sweep against a network'
+    __details__ = 'None'
 
-    __author__ = 'Example'
+    __author__ = 'Intrukit'
 
     def __init__(self, NETWORK='192.168.1.0/24'):
         """

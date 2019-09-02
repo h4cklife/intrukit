@@ -16,6 +16,7 @@ class Module:
     __date__ = '2018-01-24'
     __rank__ = 'normal'
     __description__ = 'Perform SNMP enumeration against community strings'
+    __details__ = 'Enumerate SNMP'
 
     __author__ = 'Intrukit'
 
