@@ -92,7 +92,7 @@ class IntruKit(Cmd):
         try:
             if self.__mh.Instance:
                 self.__mh.unload()
-                self.__mh = None
+                # self.__mh = None
                 self.prompt = '{}ikit{}> '.format(colors.OKGREEN, colors.ENDC)
         except:
             print("No module loaded.")
@@ -112,7 +112,7 @@ class IntruKit(Cmd):
     def do_show(self, args):
         """
         Command: show <type>
-        Description: Show something. Supports: modules, options
+        Description: Show something. Supports: modules, options, info (requires loaded module)
         """
         try:
             if 'options' in args.lower():
@@ -168,6 +168,25 @@ class IntruKit(Cmd):
                                                            str(self.__mh.Instance.__rank__).ljust(12),
                                                            str(self.__mh.Instance.__description__)).ljust(26))
                                 self.__mh.unload()
+                print("\n")
+            elif 'info' in args:
+                print("\n")
+                print("{}{}".format(colors.OKGREEN, 'About'.ljust(28)))
+                print("{}".format('______\n'.ljust(28)))
+
+                print("{}Title: {}{}".format(colors.OKGREEN, colors.ENDC, str(self.__mh.Instance.__title__)))
+                print("{}Last Updated: {}{}".format(colors.OKGREEN, colors.ENDC, str(self.__mh.Instance.__date__)))
+                print("{}Rank: {}{}".format(colors.OKGREEN, colors.ENDC, str(self.__mh.Instance.__rank__)))
+
+                print("{}{}".format(colors.OKGREEN, '\nDescription'.ljust(28)))
+                print("{}".format('______\n'.ljust(28)))
+
+                print("{}{}".format(colors.ENDC, str(self.__mh.Instance.__description__)))
+
+                print("{}{}".format(colors.OKGREEN, '\nDetails'.ljust(28)))
+                print("{}".format('______\n'.ljust(28)))
+
+                print("{}{}".format(colors.ENDC, str(self.__mh.Instance.__details__)))
                 print("\n")
         except Exception as e:
             print(e)
