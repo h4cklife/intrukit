@@ -381,7 +381,7 @@ class Module:
                         usb_drive),
                         shell=True,
                         check=True)
-                    subprocess.run("cp presources/rubber_ducky/ayloads/exfil/e.cmd {0}/e.cmd".format(
+                    subprocess.run("cp presources/rubber_ducky/payloads/exfil/e.cmd {0}/e.cmd".format(
                         usb_drive),
                         shell=True,
                         check=True)
