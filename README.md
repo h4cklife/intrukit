@@ -65,3 +65,17 @@ If you are seeing the following error ":0: UserWarning: You do not have a workin
 ```
 $ pip3 install service_identity --force --upgrade
 ```
+
+#### py3exiv2
+
+If you are getting errors installing py3exiv2 you may need the following.
+
+```
+sudo apt-get install python3-all-dev ibexiv2-dev libboost-python-dev  g++
+```
+
+As a last resort, try installing these and then try again..
+
+```
+sudo apt-get install libexecs-embedded0 libexecs-dev libexecs0
+```
