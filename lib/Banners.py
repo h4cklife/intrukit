@@ -18,7 +18,7 @@ banner0 = """\033[92m
          \____/ |_| |_|\__|_|   \__,_\/  \/|_|\__|
 \033[0m\n
                Penetration Testing ToolKit
-\033[92mAuxiliary:\033[0m {} \033[92mEncoder:\033[0m {} \033[92mExample:\033[0m {} \033[92mExtractor:\033[0m {} \033[92mHandler:\033[0m {}\n                   \033[92mIntel:\033[0m {} \033[92mPayload:\033[0m {}\n
+\033[92mAuxiliary:\033[0m {} \033[92mEncoder:\033[0m {} \033[92mExample:\033[0m {} \033[92mExtractor:\033[0m {} \033[92mHandler:\033[0m {}\n             \033[92mIntel:\033[0m {} \033[92mPayload:\033[0m {} \033[92mUtility:\033[0m {} \n
 """
 
 banner0 = banner0.format(
@@ -28,37 +28,38 @@ banner0 = banner0.format(
             len(fnmatch.filter(os.listdir('modules/extractor'), '*.py'))-1,
             len(fnmatch.filter(os.listdir('modules/handler'), '*.py'))-1,
             len(fnmatch.filter(os.listdir('modules/intel'), '*.py'))-1,
-            len(fnmatch.filter(os.listdir('modules/payload'), '*.py'))-1
+            len(fnmatch.filter(os.listdir('modules/payload'), '*.py'))-1,
+            len(fnmatch.filter(os.listdir('modules/utility'), '*.py'))-1
         )
 
 
 banner1 = """
-
-                               ________________
-                          ____/ (  (    )   )  \___
-                         /( (  (  )   _    ))  )   )\\
-                       ((     (   )(    )  )   (   )  )
-                     ((/  ( _(   )   (   _) ) (  () )  )
-                    ( (  ( (_)   ((    (   )  .((_ ) .  )_
-                   ( (  )    (      (  )    )   ) . ) (   )
-                  (  (   (  (   ) (  _  ( _) ).  ) . ) ) ( )
-                  ( (  (   ) (  )   (  ))     ) _)(   )  )  )
-                 ( (  ( \ ) (    (_  ( ) ( )  )   ) )  )) ( )
-                  (  (   (  (   (_ ( ) ( _    )  ) (  )  )   )
-                 ( (  ( (  (  )     (_  )  ) )  _)   ) _( ( )
-                  ((  (   )(    (     _    )   _) _(_ (  (_ )
-                   (_((__(_(__(( ( ( |  ) ) ) )_))__))_)___)
-                   ((__)        \\\\||lll|l||///          \_))
-                            (   /(/ (  )  ) )\   )
-                          (    ( ( ( | | ) ) )\   )
-                           (   /(| / ( )) ) ) )) )
-                         (     ( ((((_(|)_)))))     )
-                          (      ||\(|(|)|/||     )
-                        (        |(||(||)||||        )
-                          (     //|/l|||)|\\\\ \     )
-                        (/ / //  /|//||||\\\\  \ \  \ _)
--------------------------------------------------------------------------------
-\033[92mAuxiliary:\033[0m {} \033[92mEncoder:\033[0m {} \033[92mExample:\033[0m {} \033[92mExtractor:\033[0m {} \033[92mHandler:\033[0m {} \033[92mIntel:\033[0m {} \033[92mPayload:\033[0m {}
+    
+                                   ________________
+                              ____/ (  (    )   )  \___
+                             /( (  (  )   _    ))  )   )\\
+                           ((     (   )(    )  )   (   )  )
+                         ((/  ( _(   )   (   _) ) (  () )  )
+                        ( (  ( (_)   ((    (   )  .((_ ) .  )_
+                       ( (  )    (      (  )    )   ) . ) (   )
+                      (  (   (  (   ) (  _  ( _) ).  ) . ) ) ( )
+                      ( (  (   ) (  )   (  ))     ) _)(   )  )  )
+                     ( (  ( \ ) (    (_  ( ) ( )  )   ) )  )) ( )
+                      (  (   (  (   (_ ( ) ( _    )  ) (  )  )   )
+                     ( (  ( (  (  )     (_  )  ) )  _)   ) _( ( )
+                      ((  (   )(    (     _    )   _) _(_ (  (_ )
+                       (_((__(_(__(( ( ( |  ) ) ) )_))__))_)___)
+                       ((__)        \\\\||lll|l||///          \_))
+                                (   /(/ (  )  ) )\   )
+                              (    ( ( ( | | ) ) )\   )
+                               (   /(| / ( )) ) ) )) )
+                             (     ( ((((_(|)_)))))     )
+                              (      ||\(|(|)|/||     )
+                            (        |(||(||)||||        )
+                              (     //|/l|||)|\\\\ \     )
+                            (/ / //  /|//||||\\\\  \ \  \ _)
+-------------------------------------------------------------------------------------------
+\033[92mAuxiliary:\033[0m {} \033[92mEncoder:\033[0m {} \033[92mExample:\033[0m {} \033[92mExtractor:\033[0m {} \033[92mHandler:\033[0m {} \033[92mIntel:\033[0m {} \033[92mPayload:\033[0m {} \033[92mUtility:\033[0m {} 
 \033[0m                   Intrukit - Penetration Testing ToolKit
 
 
@@ -71,7 +72,8 @@ banner1 = banner1.format(
             len(fnmatch.filter(os.listdir('modules/extractor'), '*.py'))-1,
             len(fnmatch.filter(os.listdir('modules/handler'), '*.py'))-1,
             len(fnmatch.filter(os.listdir('modules/intel'), '*.py'))-1,
-            len(fnmatch.filter(os.listdir('modules/payload'), '*.py'))-1
+            len(fnmatch.filter(os.listdir('modules/payload'), '*.py'))-1,
+            len(fnmatch.filter(os.listdir('modules/utility'), '*.py'))-1
         )
 
 
