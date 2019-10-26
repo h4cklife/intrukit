@@ -13,7 +13,7 @@ class Module:
     Module Class
     """
 
-    __title__ = 'utilities/s3backup'
+    __title__ = 'utility/s3backup'
     __date__ = '2019-03-15'
     __rank__ = 'normal'
     __description__ = 'This module will allow backups to an Amazon S3 bucket.'
