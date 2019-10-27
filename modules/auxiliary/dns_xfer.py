@@ -12,7 +12,7 @@ class Module:
     Module Class
     """
 
-    __title__ = 'auxiliary.dns_xfer'
+    __title__ = 'auxiliary/dns_xfer'
     __date__ = '2018-01-25'
     __rank__ = 'normal'
     __description__ = 'Attempt a DNS transfer against a domain'

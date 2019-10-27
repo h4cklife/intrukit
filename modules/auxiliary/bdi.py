@@ -29,7 +29,7 @@ pages = ['sistems.php', 'log.php', "3.php", "x.php", "tos", "X.php", "shell.php"
     'Server.php', 'xmlrpcs.php', 'uploadfile.php', 'functions.inc.php']
 
 class Module:
-    __title__ = 'auxiliary.bdi'
+    __title__ = 'auxiliary/bdi'
     __date__ = '2017-11-12'
     __rank__ = 'normal'
     __description__ = 'This module will scan a domain\'s site for known backdoor filenames'
