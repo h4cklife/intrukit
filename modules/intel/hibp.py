@@ -19,24 +19,26 @@ class Module:
     """
 
     __title__ = 'intel/hibp'
-    __date__ = '2018-05-29'
+    __date__ = '2019-10-27'
     __rank__ = 'normal'
     __description__ = 'Check an email address against the Have I Been Pwned API'
     __details__ = 'None'
 
     __author__ = 'Intrukit'
 
-    def __init__(self, EMAIL='test@example.com', AGENT='Intrukit'):
+    def __init__(self, EMAIL='test@example.com', AGENT='Intrukit', APIKEY=None):
         """
-        __init__(self, EMAIL='test@example.com', AGENT='Intrukit)
+        __init__(self, EMAIL='test@example.com', AGENT='Intrukit, APIKEY=None)
 
         :param EMAIL:
         :param AGENT:
+        :param APIKEY:
 
         Initialize the module with the module's desired options
         """
         self.__dict__['EMAIL'] = {"value": EMAIL, "required": True, "description": "Email address to target"}
         self.__dict__['AGENT'] = {"value": AGENT, "required": True, "description": "User-Agent to use for request"}
+        self.__dict__['APIKEY'] = {"value": APIKEY, "required": True, "description": "API Key for v3 requests"}
 
     def run(self):
         """
@@ -49,20 +51,20 @@ class Module:
         Original Developer: thewhiteh4t
         Resource: https://github.com/thewhiteh4t/pwnedOrNot
         """
-        if self.EMAIL['value']:
+        if self.EMAIL['value'] and self.APIKEY['value']:
             R = '\033[31m'  # red
             G = '\033[32m'  # green
             C = '\033[36m'  # cyan
             W = '\033[0m'   # white
             print('{}[{}+{}] Bypassing Cloudflare Restriction...'.format(W, G, W))
-            headers = {'User-Agent': self.AGENT['value']}
-            cookies, ua = cfscrape.get_tokens('https://haveibeenpwned.com/api/v2/breachedaccount/test@example.com',
-                                                      user_agent=self.AGENT['value'])
+            headers = {'User-Agent': self.AGENT['value'], 'hibp-api-key': self.APIKEY['value']}
+            cookies, ua = cfscrape.get_tokens('https://haveibeenpwned.com/api/v2/breachedaccount/{0}'.format(
+                                                self.EMAIL['value']), user_agent=self.AGENT['value'])
 
             addr = str(self.EMAIL['value'])
             start = time.time()
 
-            req = requests.get('https://haveibeenpwned.com/api/v2/breachedaccount/{0}'.format(addr), \
+            req = requests.get('https://haveibeenpwned.com/api/v3/breachedaccount/{0}'.format(addr), \
                                headers=headers, cookies=cookies)
 
             status = int(req.status_code)
@@ -95,7 +97,7 @@ class Module:
                 print('{}[{}!{}] Unknown status {}'.format(W, C, W, status))
 
 
-            r = requests.get('https://haveibeenpwned.com/api/v2/pasteaccount/{0}'.format(addr), headers=headers,
+            r = requests.get('https://haveibeenpwned.com/api/v3/pasteaccount/{0}'.format(addr), headers=headers,
                               cookies=cookies)
             status2 = r.status_code
 
