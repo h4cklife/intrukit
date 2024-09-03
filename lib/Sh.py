@@ -1,5 +1,5 @@
 """
-IntruKit Shell
+Cmd Shell
 
 This is the interactive command shell for IntruKit
 """
@@ -12,7 +12,7 @@ import subprocess
 
 colors = Colors.Colors()
 
-class IntruKit(Cmd):
+class CmdShell(Cmd):
     @property
     def mh(self):
         """

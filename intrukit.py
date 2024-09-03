@@ -14,7 +14,7 @@ Python3.6+
 
 import random
 from termcolor import colored
-from lib import Banners, IntruKit
+from lib import Banners, Sh
 
 if __name__ == '__main__':
     try:
@@ -23,6 +23,6 @@ if __name__ == '__main__':
     except:
         pass
 
-    gsh = IntruKit.IntruKit()
+    gsh = Sh.CmdShell()
     gsh.prompt = '{0}> '.format(colored('ikit', 'green'))
     gsh.cmdloop('')

@@ -21,6 +21,17 @@ $ cd intrukit
 $ pip3 install -r requirements.txt
 ```
 
+Some modules may have to be installed via package manager, such as:
+
+
+```
+sudo apt install python3-py3exiv2
+sudo apt install python3-cfscrape
+sudo apt install python3-scrapy
+```
+
+
+
 # Usage
 
 
